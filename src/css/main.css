@@ -69,48 +69,47 @@ a{
   flex-wrap :wrap;
 }
 
-.main-menu > .menu > .menu__item{
+.main-menu > .menu > .item{
   color: #fff;
   font-size: 18px;
   padding: 6px 0px 34px;
   font-weight: 700;
   margin-left: 85px;
   letter-spacing: -0.05em;
-  cursor: pointer;
 }
 
-.main-menu > .menu > .menu__item:nth-child(2){
+.main-menu > .menu > .item:nth-child(2){
   margin-left: 94px;
 }
 
-.main-menu > .menu > .menu__item:hover{
+.main-menu > .menu > .item:hover{
   color: #fff584;;
 }
 
 
-.main-menu .menu__item .item__contents{
+.main-menu .item .item__contents{
   display: none;
   position: absolute;
   top: 100px;
   left: 30px;
 }
 
-.main-menu .menu__item:hover .item__contents{
+.main-menu .item:hover .item__contents{
   display: flex;
 }
 
-.main-menu .menu__item .item__contents > ul{
+.main-menu .item .item__contents > ul{
   display: flex;
 }
 
-.main-menu .menu__item .item__contents > ul > li{
+.main-menu .item .item__contents > ul > li{
   margin-left: 45px;
   color: #fff;
   font-weight: lighter;
   font-size: 16px;
 }
 
-.main-menu .itmenu__itemem .item__contents > ul > li:nth-child(1){
+.main-menu .item .item__contents > ul > li:nth-child(1){
   margin-left: 0;
   font-weight: 700;
   font-size: 20px;
@@ -118,7 +117,7 @@ a{
   width: 190px;
 }
 
-.main-menu .menu__item .item__contents > ul img{
+.main-menu .item .item__contents > ul img{
   height: 20px;
   width: 12px;
   margin-left: 2px;
