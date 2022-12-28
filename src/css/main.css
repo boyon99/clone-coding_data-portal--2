@@ -1,0 +1,416 @@
+@import url(./reset.css);
+
+body{
+  font-family: 'Malgun Gothic', '맑은 고딕', Dotum, '돋움', sans-serif;
+}
+a{
+  text-decoration: none;
+  color: #fff;
+  cursor: pointer;
+}
+
+
+
+.wrapper{
+  width: 100%;
+  height: 1000px;
+  background-image: url(../img/bg-main.png);
+  background-repeat: no-repeat;
+  background-size: initial;
+  background-position-x: center;
+  background-position-y: 0px;
+}
+
+/*header*/
+#header{
+  padding: 18px 0 0px 11px;
+  margin: 0 auto;
+  max-width: 1200px;
+  position: relative;
+}
+
+#header > ul{
+  display: flex;
+  justify-content: space-between;
+}
+
+#header > ul >  a{
+  font-size: 14px;
+}
+
+#header > ul > a > img{
+  margin-right: 12px;
+  vertical-align:bottom;
+}
+
+#header div{
+  display: flex;
+    
+}
+
+#header div > li{
+  margin-left: 30px;
+  font-size: 14px;
+}
+
+
+/*main-menu*/
+.main-menu{
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  height: 76.8px;
+  position: relative;
+}
+
+.main-menu > .menu{
+  display: flex;
+  padding-top: 22px;
+  flex-wrap :wrap;
+}
+
+.main-menu > .menu > .menu__item{
+  color: #fff;
+  font-size: 18px;
+  padding: 6px 0px 34px;
+  font-weight: 700;
+  margin-left: 85px;
+  letter-spacing: -0.05em;
+  cursor: pointer;
+}
+
+.main-menu > .menu > .menu__item:nth-child(2){
+  margin-left: 94px;
+}
+
+.main-menu > .menu > .menu__item:hover{
+  color: #fff584;;
+}
+
+
+.main-menu .menu__item .item__contents{
+  display: none;
+  position: absolute;
+  top: 100px;
+  left: 30px;
+}
+
+.main-menu .menu__item:hover .item__contents{
+  display: flex;
+}
+
+.main-menu .menu__item .item__contents > ul{
+  display: flex;
+}
+
+.main-menu .menu__item .item__contents > ul > li{
+  margin-left: 45px;
+  color: #fff;
+  font-weight: lighter;
+  font-size: 16px;
+}
+
+.main-menu .itmenu__itemem .item__contents > ul > li:nth-child(1){
+  margin-left: 0;
+  font-weight: 700;
+  font-size: 20px;
+  display: flex;
+  width: 190px;
+}
+
+.main-menu .menu__item .item__contents > ul img{
+  height: 20px;
+  width: 12px;
+  margin-left: 2px;
+}
+
+
+
+/*search*/
+.main-search{
+  margin-top: 149px;
+  height: 300px;
+  position: relative;
+  display: flex;
+}
+
+.main-search .search-1{
+  width: 720px;
+  height: 124px;
+  padding: 42px 0px 0px 120px;
+}
+
+.main-search .search-1 .search__search form{
+  position: relative;
+}
+.main-search .search-1 .search__search form input[type=search] {
+  width: 656px;
+  height: 64px;
+  outline-offset: -2px;
+  background-color: #fff;
+  box-shadow: 1px 1px 10px 0px rgb(0 0 0 / 30%);
+  border: none;
+  position: absolute;
+  top: 0;
+  right: 64px;
+}
+
+.main-search .search-1 .search__search form input[placeholder] {
+  padding: 0 15px;
+  font-size: 18px;
+  background-color: #fff;
+}
+
+.main-search .search-1 .search__search form button {
+  height: 64px;
+  width: 64px;
+  box-shadow: 1px 1px 10px 0px rgb(0 0 0 / 30%);
+  border: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+
+.main-search .search-1 .search__requirement {
+  color: #fff;
+  display: flex;
+}
+
+.main-search .search-1 .search__requirement div{
+  margin-top: 85px;
+}
+
+.main-search .search-1 .search__requirement div:nth-child(1){
+  margin-top: 95px;
+  font-size: 14px;
+}
+
+.main-search .search-1 .search__requirement div img{
+  margin: 0px 20px 0px 5px;
+  height: 15px;
+  width: auto;
+}
+
+.main-search .search-1 .search__requirement div select{
+  overflow: hidden;
+  display: block;
+  position: relative;
+  min-width: 150px;
+  max-width: 200px;
+  height: 40px;
+  padding: 0 30px 0 10px;
+  color: #fff;
+  text-align: left;
+  border: 1px solid #ddd;
+  background-color: #456adb;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  margin-left: 6px;
+}
+
+/* .main-search .search-1 .search__requirement div select:focus{
+  background-color: #ddd;
+  
+} */
+
+.main-search .search-2{
+  padding-left: 20px;
+  width: 220px;
+  color: #fff;
+  position: relative;
+}
+
+.main-search .search-2 h5{
+  margin: 0 0 20px 0;
+  padding: 2px 0 0 0;
+  line-height: 20px;
+}
+
+.main-search .search-2 .search__popular__btn{
+  content: '';
+  overflow: hidden;
+  display: block;
+  width: 220px;
+  height: 64px;
+  border-radius: 5px;
+  background: #dfeff7 no-repeat right center;
+  box-shadow: 1px 1px 10px 0px rgb(0 0 0 / 30%);
+}
+
+.main-search .search-2 .search__popular__btn a{
+  color: #1c84cc;
+  font-weight: 700;
+  line-height: 64px;
+  padding: 0 35px 0 15px;
+  font-size: 18px;
+}
+
+.main-search .search-2 .search__popular__btn .swiper-container{
+  height: 62px;
+  flex-grow: 1;
+}
+
+.main-search .search-2 .search-help{
+  position: absolute;
+  top: 141px;
+  right: 0px;
+  font-size: 14px;
+}
+
+.main-search .search-2 .search-help img{
+  margin-right: 3px;
+  height: 16px;
+  width: auto;
+  vertical-align:bottom;
+}
+
+.main-search .search-2 .go-to-content{
+  position: absolute;
+  top: 198px;
+  right: 0px;
+  font-size: 14px;
+}
+
+
+
+/*theme*/
+.main-theme{
+color: #fff;
+display: flex;
+margin-top: 170px;
+}
+
+
+
+
+.main-theme .theme{
+  position: relative;
+  display: flex;
+}
+
+.main-theme .theme .theme__name{
+  margin: 1px 12px 0px 18px;
+  font-size: 16px;
+}
+
+.main-theme .theme .theme__name:hover{  
+  text-decoration: underline;
+  color: #ffda2e;
+}
+
+
+.main-theme > div.theme__name{
+  font-weight: 700;
+  font-size: 20px;
+  margin: -1px 12px 0px 0px;
+}
+
+.main-theme .theme .theme__contents{
+  width: 1200px;
+  margin-top: 44px;
+  position:absolute;
+  display: flex;
+  justify-content: center;
+  margin-left: -64px;
+}
+
+.no{
+  width:56px;
+  height: 56px;
+  overflow: hidden;
+  position: relative;
+  margin: auto;
+}
+
+.theme__content:hover .yes{
+  position: absolute;
+  bottom: 0;
+}
+
+.main-theme .theme .theme__contents .theme__content{
+  border-right: 1px solid rgba(255,255,255,0.1);
+  width: 119px;
+  height: 100px;
+}
+
+.main-theme .theme .theme__contents .theme__content:last-child{
+  width: 119px;
+  height: 100px;
+  border-right: none;
+}
+
+.h4{
+  width:56px;
+  height: 56px;
+  margin: auto;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.main-theme .theme .theme__contents .theme__content h4{
+  width: 56px;
+  font-size: 14px;
+  position: absolute;
+}
+
+.theme__content:hover .h4{
+  color:#ffda2e;
+}
+
+
+/*category-data*/
+.category-data{
+  margin-top: 200px;
+  width: 100%;
+  height: 300px;
+  background-color: #ffda2e;
+  display: flex;
+}
+
+.category-data .data-1{
+  width: 380px;
+  margin-right: 30px;
+  display: flex;
+  position: relative;
+}
+
+.category-data .data-2{
+  width: 380px;
+  margin-right: 30px;
+  display: flex;
+  position: relative;
+}
+
+.category-data .data-3{
+  width: 380px;
+  background-color: #1c84cc;
+  display: flex;
+  position: relative;
+
+}
+
+.category-data h1{
+  padding: 0 0 20px 0;
+  font-size: 20px;
+  line-height: 20px;
+  letter-spacing: -0.05em;
+}
+
+.category-data h2{
+  margin: 7px 0px 0px 10px;
+  color: #666;
+  font-size: 14px;
+}
+
+.category-data h3{
+  position: absolute;
+  right: 0;
+  margin: 7px 0px 0px 10px;
+  color: #666;
+  font-size: 14px;
+
+}
+
+
+
