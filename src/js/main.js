@@ -5,3 +5,13 @@ new Swiper('.search__popular__btn .swiper-container', {
   },
   loop:true
 });
+
+
+
+
+location.href = "#tab3";
+
+function loadtwo() {
+  location.href = "#tab3";
+  location.href = "#tab1";
+}
