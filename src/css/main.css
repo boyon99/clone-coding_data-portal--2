@@ -271,3 +271,85 @@ a{
   font-size: 14px;
 }
 
+
+
+/*theme*/
+.main-theme{
+color: #fff;
+display: flex;
+margin-top: 170px;
+}
+
+.main-theme .theme{
+  position: relative;
+  display: flex;
+}
+
+.main-theme .theme .theme__name{
+  margin: 1px 12px 0px 18px;
+  font-size: 16px;
+}
+
+.main-theme .theme .theme__name:hover{  
+  text-decoration: underline;
+  color: #ffda2e;
+}
+
+
+.main-theme > div.theme__name{
+  font-weight: 700;
+  font-size: 20px;
+  margin: -1px 12px 0px 0px;
+}
+
+.main-theme .theme .theme__contents{
+  width: 1200px;
+  margin-top: 44px;
+  position:absolute;
+  display: flex;
+  justify-content: center;
+  margin-left: -64px;
+}
+
+.no{
+  width:56px;
+  height: 56px;
+  overflow: hidden;
+  position: relative;
+  margin: auto;
+}
+
+.theme__content:hover .yes{
+  position: absolute;
+  bottom: 0;
+}
+
+.main-theme .theme .theme__contents .theme__content{
+  border-right: 1px solid rgba(255,255,255,0.1);
+  width: 119px;
+  height: 100px;
+}
+
+.main-theme .theme .theme__contents .theme__content:last-child{
+  width: 119px;
+  height: 100px;
+  border-right: none;
+}
+
+.h4{
+  width:56px;
+  height: 56px;
+  margin: auto;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.main-theme .theme .theme__contents .theme__content h4{
+  width: 56px;
+  font-size: 14px;
+  position: absolute;
+}
+
+.theme__content:hover .h4{
+  color:#ffda2e;
+}
