@@ -21,30 +21,109 @@ a{
 
 /*header*/
 #header{
-  padding: 22px 0 0 11px;
-  margin: 0 120px 0 120px;
-  display: flex;
-  justify-content: space-between;
-}
-
-#header > a{
-  font-size: 14px;
-}
-
-#header > a > img{
-  margin-right: 12px;
-  vertical-align:bottom;
+  padding: 18px 0 0px 11px;
+  margin: 0 auto;
+  max-width: 1200px;
+  position: relative;
 }
 
 #header > ul{
   display: flex;
+  justify-content: space-between;
 }
 
-#header > ul > li{
-  margin-left: 33px;
+#header > ul >  a{
   font-size: 14px;
 }
 
-#header > ul > li > a{
-
+#header > ul > a > img{
+  margin-right: 12px;
+  vertical-align:bottom;
 }
+
+#header div{
+  display: flex;
+    
+}
+
+#header div > li{
+  margin-left: 30px;
+  font-size: 14px;
+}
+
+
+/*main-menu*/
+/*item__name*/
+.main-menu{
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  height: 76.8px;
+  position: relative;
+}
+
+.main-menu > .menu{
+  display: flex;
+  padding-top: 22px;
+}
+
+.main-menu > .menu > .item{
+  color: #fff;
+  font-size: 18px;
+  padding: 6px 0px 34px;
+  font-weight: 700;
+  margin-left: 85px;
+  letter-spacing: -0.05em;
+}
+
+.main-menu > .menu > .item:nth-child(2){
+  margin-left: 94px;
+}
+
+.main-menu > .menu > .item:hover{
+  color: #fff584;;
+}
+
+/*item__contents*/
+
+
+.main-menu .item .item__contents{
+  display: none;
+  position: absolute;
+  top: 100px;
+  left: 30px;
+}
+
+.main-menu .item:hover .item__contents{
+  display: flex;
+}
+
+.main-menu .item .item__contents > ul{
+  display: flex;
+}
+
+.main-menu .item .item__contents > ul > li{
+  margin-left: 45px;
+  color: #fff;
+  font-weight: lighter;
+  font-size: 16px;
+}
+
+.main-menu .item .item__contents > ul > li:nth-child(1){
+  margin-left: 0;
+  font-weight: 700;
+  font-size: 20px;
+  display: flex;
+  width: 190px;
+}
+
+.main-menu .item .item__contents > ul img{
+  height: 20px;
+  width: 12px;
+  margin-left: 2px;
+}
+
+.main-menu .item .item__contents > ul h4{
+}
+
+
