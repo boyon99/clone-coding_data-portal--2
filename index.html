@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" href="./favicon.png" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
   <link href="./src/css/main.css" rel="stylesheet" />
   <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js"
     integrity="sha512-WFN04846sdKMIP5LKNphMaWzU7YpMyCU245etK3g/2ARYbPK9Ub18eG+ljU96qKRCWh+quCY7yefSmlkQw1ANQ=="
@@ -15,12 +16,13 @@
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
   <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
   <script defer src="./src/js/main.js"></script>
   <title>공공데이터포털</title>
 </head>
 
 <body>
-  <div class="wrapper">
+  <div class="wrapper" style="width: 1400px;">
     <header id="header">
       <ul>
         <a href="/" class="logo"><img src="./src/img/eg_logo.png" alt="공공데이터포털 에코 로고" class="img">이 누리집은 대한민국 공식 전자정부
@@ -218,61 +220,69 @@
     </section>
 
     <section class="main-theme">
+
       <div class="theme__name">테마별</div>
 
-      <div class="theme">
-        <div class="theme__name">카테고리별</div>
-        <div class="theme__contents">
+      <div class="data__container theme">
+        <div class="data__name theme__name">
+          <ul>
+            <li class="active"><a href="#" rel="tab5">카테고리별</a></li>
+            <li><a href="#" rel="tab6">국가중점데이터별</a></li>
+            <li><a href="#" rel="tab7">제공기관유형별</a></li>
+
+          </ul>
+          </div>
+        <div id="tab5" class="data__content theme__contents">
           <div class="theme__content">
-            <div class="no"><img src="./src/img/ico-main-theme-0201.png" alt="" class="yes"></div>
+            <div class="no"><img src="./src/img/ico-main-theme-0201.png" alt="교육" class="yes"></div>
             <div class="h4">
               <h4>교육</h4>
             </div>
           </div>
           <div class="theme__content">
-            <div class="no"><img src="./src/img/ico-main-theme-0202.png" alt="" class="yes"></div>
+            <div class="no"><img src="./src/img/ico-main-theme-0202.png" alt="국토관리" class="yes"></div>
             <div class="h4">
               <h4>국토관리</h4>
             </div>
           </div>
           <div class="theme__content">
-            <div class="no"><img src="./src/img/ico-main-theme-0203.png" alt="" class="yes"></div>
+            <div class="no"><img src="./src/img/ico-main-theme-0203.png" alt="공공행정" class="yes"></div>
             <div class="h4">
               <h4>공공행정</h4>
             </div>
           </div>
           <div class="theme__content">
-            <div class="no"><img src="./src/img/ico-main-theme-0204.png" alt="" class="yes"></div>
+            <div class="no"><img src="./src/img/ico-main-theme-0204.png" alt="재정금융" class="yes"></div>
             <div class="h4">
               <h4>재정금융</h4>
             </div>
           </div>
           <div class="theme__content">
-            <div class="no"><img src="./src/img/ico-main-theme-0201.png" alt="" class="yes"></div>
+            <div class="no"><img src="./src/img/ico-main-theme-0201.png" alt="교육" class="yes"></div>
             <div class="h4">
               <h4>교육</h4>
             </div>
           </div>
           <div class="theme__content">
-            <div class="no"><img src="./src/img/ico-main-theme-0205.png" alt="" class="yes"></div>
+            <div class="no"><img src="./src/img/ico-main-theme-0205.png" alt="산업고용" class="yes"></div>
             <div class="h4">
               <h4>산업고용</h4>
             </div>
           </div>
           <div class="theme__content">
-            <div class="no"><img src="./src/img/ico-main-theme-0206.png" alt="" class="yes"></div>
+            <div class="no"><img src="./src/img/ico-main-theme-0206.png" alt="사회복지" class="yes"></div>
             <div class="h4">
               <h4>사회복지</h4>
             </div>
           </div>
           <div class="theme__content">
-            <div class="no"><img src="./src/img/ico-main-theme-0207.png" alt="" class="yes"></div>
+            <div class="no"><img src="./src/img/ico-main-theme-0207.png" alt="식품건강" class="yes"></div>
             <div class="h4">
               <h4>식품건강</h4>
             </div>
           </div>
           <div class="theme__content">
-            <div class="no"><img src="./src/img/ico-main-theme-0208.png" alt="" class="yes"></div>
+            <div class="no"><img src="./src/img/ico-main-theme-0208.png" alt="문화관광" class="yes"></div>
             <div class="h4">
               <h4>문화관광</h4>
             </div>
@@ -280,37 +290,480 @@
 
 
         </div>
+
+        <div id="tab6" class="data__content theme__contents">
+          <div class="theme__content">
+            <div class="no"><img src="./src/img/ico-main-theme-0101.png" alt="건축정보" class="yes"></div>
+            <div class="h4">
+              <h4>건축정보</h4>
+            </div>
+          </div>
+          <div class="theme__content">
+            <div class="no"><img src="./src/img/ico-main-theme-0102.png" alt="교통사고 정보" class="yes"></div>
+            <div class="h4">
+              <h4>교통사고</h4>
+            </div>
+          </div>
+          <div class="theme__content">
+            <div class="no"><img src="./src/img/ico-main-theme-0103.png" alt="국민건강 정보" class="yes"></div>
+            <div class="h4">
+              <h4>국민건강</h4>
+            </div>
+          </div>
+          <div class="theme__content">
+            <div class="no"><img src="./src/img/ico-main-theme-0104.png" alt="지방행정 정보" class="yes"></div>
+            <div class="h4">
+              <h4>지방행정 정보</h4>
+            </div>
+          </div>
+          <div class="theme__content">
+            <div class="no"><img src="./src/img/ico-main-theme-0105.png" alt="통합재정 정보" class="yes"></div>
+            <div class="h4">
+              <h4>통합재정 정보</h4>
+            </div>
+          </div>
+          <div class="theme__content">
+            <div class="no"><img src="./src/img/ico-main-theme-0106.png" alt="부동산종합 정보" class="yes"></div>
+            <div class="h4">
+              <h4>부동산종합 정보</h4>
+            </div>
+          </div>
+          <div class="theme__content">
+            <div class="no"><img src="./src/img/ico-main-theme-0107.png" alt="수산정보" class="yes"></div>
+            <div class="h4">
+              <h4>수산정보</h4>
+            </div>
+          </div>
+          <div class="theme__content">
+            <div class="no"><img src="./src/img/ico-main-theme-0108.png" alt="" class="yes"></div>
+            <div class="h4">
+              <h4>상권정보</h4>
+            </div>
+          </div>
+          <div class="theme__content">
+            <div class="no"><img src="./src/img/ico-main-theme-0109.png" alt="법령정보" class="yes"></div>
+            <div class="h4">
+              <h4>법령정보</h4>
+            </div>
+          </div>
+          <div class="theme__content">
+            <div class="no"><img src="./src/img/ico-main-theme-more.png" alt="더보기" class="yes">더보기</div>
+            <div class="h4">
+              <h4>법령정보</h4>
+            </div>
+          </div>
+
+        </div>
+
+        <div id="tab7" class="data__content theme__contents">
+          <div class="theme__content">
+            <div class="no"><img src="./src/img/ico-main-theme-0301.png" alt="국가행정 기관" class="yes"></div>
+            <div class="h4">
+              <h4>국가행정 기관</h4>
+            </div>
+          </div>
+          <div class="theme__content">
+            <div class="no"><img src="./src/img/ico-main-theme-0302.png" alt="자치행정 기관" class="yes"></div>
+            <div class="h4">
+              <h4>자치행정 기관</h4>
+            </div>
+          </div>
+          <div class="theme__content">
+            <div class="no"><img src="./src/img/ico-main-theme-0303.png" alt="교육행정 기관" class="yes"></div>
+            <div class="h4">
+              <h4>교육행정 기관</h4>
+            </div>
+          </div>
+          <div class="theme__content">
+            <div class="no"><img src="./src/img/ico-main-theme-0304.png" alt="입법기관" class="yes"></div>
+            <div class="h4">
+              <h4>입법기관</h4>
+            </div>
+          </div>
+          <div class="theme__content">
+            <div class="no"><img src="./src/img/ico-main-theme-0306.png" alt="공공기관" class="yes"></div>
+            <div class="h4">
+              <h4>공공기관</h4>
+            </div>
+          </div>
+          <div class="theme__content">
+            <div class="no"><img src="./src/img/ico-main-theme-0307.png" alt="위원회" class="yes"></div>
+            <div class="h4">
+              <h4>위원회</h4>
+            </div>
+          </div>
+          <div class="theme__content">
+            <div class="no"><img src="./src/img/ico-main-theme-0308.png" alt="교육기관" class="yes"></div>
+            <div class="h4">
+              <h4>교육기관</h4>
+            </div>
+          </div>
+
+
+        </div>
       </div>
 
-      <div class="theme">
-        <div class="theme__name">국가중점데이터별</div>
-        <div class="theme_contents"></div>
-      </div>
-
-      <div class="theme">
-        <div class="theme__name">제공기관유형별</div>
-        <div class="theme_contents"></div>
-      </div>
     </section>
 
-    <section class="category-data">
-      <div class="data-1 data">
+    <section class="category-data-1 category-data">
+      <div class="data-1">
         <h1>인기 데이터</h1>
-        <h2>누적 조회순</h2>
+        <h2>누적조회순</h2>
         <h3>더보기 ></h3>
+        <div class="data__container data__container--1">
+          <div class="data__name data__name--1">
+            <ul>
+              <li class="active"><a href="#" rel="tab1">파일 데이터</a></li>
+              <li><a href="#" rel="tab2">오픈 API</a></li>
+            </ul>
+          </div>
+          <div id="tab1" class="data__content data__content--1">
+            <ol class="list">
+
+              <li><a href="javascript:location.href='/data/15083033/fileData.do'" title="소상공인시장진흥공단_상가(상권)정보 페이지로 이동">
+                  <h6>1</h6>소상공인시장진흥공단_상가(상권)정보
+                </a></li>
+
+              <li><a href="javascript:location.href='/data/15083277/fileData.do'" title="국민연금공단_국민연금 가입 사업장 내역 페이지로 이동">
+                  <h6>2</h6>국민연금공단_국민연금 가입 사업장 내역
+                </a></li>
+
+              <li><a href="javascript:location.href='/data/15049906/fileData.do'" title="한국가스공사_월별 천연가스 생산량 페이지로 이동">
+                  <h6>3</h6>한국가스공사_월별 천연가스 생산량
+                </a></li>
+
+              <li><a href="javascript:location.href='/data/15007122/fileData.do'" title="국민건강보험공단_건강검진정보 페이지로 이동">
+                  <h6>4</h6>국민건강보험공단_건강검진정보
+                </a></li>
+
+              <li><a href="javascript:location.href='/data/15070282/fileData.do'" title="도로교통공단_사고유형별 교통사고 통계 페이지로 이동">
+                  <h6>5</h6>도로교통공단_사고유형별 교통사고 통계
+                </a></li>
+
+
+            </ol>
+          </div>
+
+          <div id="tab2" class="data__content data__content--1">
+            <ol class="list">
+
+              <li><a href="javascript:location.href='/tcs/dss/selectApiDataDetailView.do?publicDataPk=15081808'"
+                  title="국세청_사업자등록정보 진위확인 및 상태조회 서비스 페이지로 이동">
+                  <h6>1</h6>국세청_사업자등록정보 진위확인 및 상태조회 서비스
+                </a></li>
+
+              <li><a href="javascript:location.href='/tcs/dss/selectApiDataDetailView.do?publicDataPk=15084084'"
+                  title="기상청_단기예보 ((구)_동네예보) 조회서비스 페이지로 이동">
+                  <h6>2</h6>기상청_단기예보 ((구)_동네예보) 조회서비스
+                </a></li>
+
+              <li><a href="javascript:location.href='/tcs/dss/selectApiDataDetailView.do?publicDataPk=15012005'"
+                  title="소상공인시장진흥공단_상가(상권)정보_API 페이지로 이동">
+                  <h6>3</h6>소상공인시장진흥공단_상가(상권)정보_API
+                </a></li>
+
+              <li><a href="javascript:location.href='/tcs/dss/selectApiDataDetailView.do?publicDataPk=15057511'"
+                  title="국토교통부_아파트매매 실거래 상세 자료 페이지로 이동">
+                  <h6>4</h6>국토교통부_아파트매매 실거래 상세 자료
+                </a></li>
+
+              <li><a href="javascript:location.href='/tcs/dss/selectApiDataDetailView.do?publicDataPk=15073861'"
+                  title="한국환경공단_에어코리아_대기오염정보 페이지로 이동">
+                  <h6>5</h6>한국환경공단_에어코리아_대기오염정보
+                </a></li>
+
+
+            </ol>
+          </div>
+        </div>
+
+
       </div>
-      <div class="data-2 data">
+      <div class="data-2">
         <h1>최신 데이터</h1>
         <h2>수정일자순</h2>
         <h3>더보기 ></h3>
+        <div class="data__container data__container--1">
+          <div class="data__name data__name--1">
+            <ul>
+              <li class="active"><a href="#" rel="tab3">파일 데이터</a></li>
+              <li><a href="#" rel="tab4">오픈 API</a></li>
+            </ul>
+          </div>
+          <div id="tab3" class="data__content data__content--1">
+            <ol class="list">
+
+              <li><a href="/data/15106612/fileData.do" title="경상북도교육청 경상북도교육청상주도서관_추천도서 목록 페이지로 이동">
+                  <span>
+                    경상북도교육청 경상북도교육청상주도서관_추천도서 목록
+                  </span>
+                </a></li>
+
+              <li><a href="/data/15110413/fileData.do" title="충청남도_먹거리특산물 페이지로 이동">
+                  <span>
+                    충청남도_먹거리특산물
+                  </span>
+                </a></li>
+
+              <li><a href="/data/15111365/fileData.do" title="충청남도 청양군_부생유 2호 사용업체 페이지로 이동">
+                  <span>
+                    충청남도 청양군_부생유 2호 사용업체
+                  </span>
+                </a></li>
+
+              <li><a href="/data/15111312/fileData.do" title="충청남도 당진시_공공주택 현황 페이지로 이동">
+                  <span>
+                    충청남도 당진시_공공주택 현황
+                  </span>
+                </a></li>
+
+              <li><a href="/data/15097728/fileData.do" title="방송통신위원회_스마트폰_PC시청기록조사 페이지로 이동">
+                  <span>
+                    방송통신위원회_스마트폰_PC시청기록조사
+                  </span>
+                </a></li>
+
+
+            </ol>
+          </div>
+
+          <div id="tab4" class="data__content data__content--1">
+            <ol class="list">
+
+              <li><a href="/data/15059594/openapi.do" title="금융위원회_금융회사재무신용정보 페이지로 이동">
+                  <span>
+                    금융위원회_금융회사재무신용정보
+                  </span>
+                </a></li>
+
+              <li><a href="/data/15043459/openapi.do" title="금융위원회_기업 재무정보 페이지로 이동">
+                  <span>
+                    금융위원회_기업 재무정보
+                  </span>
+                </a></li>
+
+              <li><a href="/data/15108392/openapi.do" title="경상남도 남해군_작물 재배 현황 데이터 페이지로 이동">
+                  <span>
+                    경상남도 남해군_작물 재배 현황 데이터
+                  </span>
+                </a></li>
+
+              <li><a href="/data/15107808/openapi.do" title="서울올림픽기념국민체육진흥공단_경주사업총괄본부 경정-출주표_GW 페이지로 이동">
+                  <span>
+                    서울올림픽기념국민체육진흥공단_경주사업총괄본부 경정-출주표_GW
+                  </span>
+                </a></li>
+
+              <li><a href="/data/15111336/openapi.do" title="법제처_법령정보지식베이스 관련법령 조회 페이지로 이동">
+                  <span>
+                    법제처_법령정보지식베이스 관련법령 조회
+                  </span>
+                </a></li>
+
+            </ol>
+          </div>
+        </div>
       </div>
-      <div class="data-3 data">
+      <div class="data-3">
         <h1>이슈 및 추천데이터</h1>
         <h2>더보기 ></h2>
-        <div class="data__gallery"></div>
+        <div class="data__gallery">
+          <!-- Swiper -->
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"><img src="./src/img/인구혼잡_재난안전_썸네일_크기조정.png" alt="인구 혼잡정보">
+                <h5>인구 혼잡정보</h5>
+              </div>
+              <div class="swiper-slide"><img src="./src/img/코로나백신_반영_배너_예방접종.png" alt="코로나19 에방접종">
+                <h5>코로나19 에방접종</h5>
+              </div>
+              <div class="swiper-slide"><img src="./src/img/코로나바이러스_19_배너.png" alt="코로나바이러스 19">
+                <h5>코로나바이러스 19</h5>
+              </div>
+              <div class="swiper-slide"><img src="./src/img/issue01.jpg" alt="미세먼지">
+                <h5>미세먼지</h5>
+              </div>
+              <div class="swiper-slide"><img src="./src/img/저출산-고령화-색변경.png" alt="저출산/고령화">
+                <h5>저출산/고령화</h5>
+              </div>
+              <div class="swiper-slide"><img src="./src/img/top10-2022-min.jpg" alt="2022년 공공데이터 활용신청 top10">
+                <h5>활용신청 TOP 10 (2022년)</h5>
+              </div>
+              <div class="swiper-slide"><img src="./src/img/top10-2021-min.jpg" alt="2021년 공공데이터 활용신청 top10">
+                <h5>활용신청 TOP 10 (2021년)</h5>
+              </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination">7</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="category-data-2 category-data">
+      <div class="data-1">
+        <h1>데이터 제공신청</h1>
+        <h2>찾는 데이터가 없을 경우 데이터 제공을 신청해보세요</h2>
+        <div class="data__box data__box--1">
+          <h1>공공데이터 제공신청</h1>
+          <h2>바로가기 ></h2>
+          <h3>포털에서 제공하지 않는 <br />공공데이터를 신청하실 수<br />있습니다.</h3>
+          <img src="./src/img/bg-main-data-request01.png" alt="공공데이터 제공신청">
+        </div>
+        <div class="data__box data__box--2">
+          <h1>분쟁조정신청</h1>
+          <h2>바로가기 ></h2>
+          <h3>포공공데이터 제공거부/중단이<br />있을 경우 분쟁조정신청을<br />할 수 있습니다.</h3>
+          <img src="./src/img/bg-main-data-request02.png" alt="분쟁조정신청">
+        </div>
+      </div>
+
+      <div class="data-3">
+        <h1>개방현황</h1>
+        <h3><span id="current_date"></span> 현재</h3>
+        <div class="data__box data__box--3">
+          <div>
+            <p>개방기관</p><img src="./src/img/bg-main-open01.png" alt="개방기관 이미지"><strong>1,006개</strong>
+          </div>
+          <div>
+            <p>파일데이터</p><img src="./src/img/bg-main-open02.png" alt="파일데이터 이미지"><strong>56,996건</strong>
+          </div>
+          <div>
+            <p>오픈 API</p><img src="./src/img/bg-main-open03.png" alt="오픈API 이미지"><strong>10,543건</strong>
+          </div>
+          <div>
+            <p>표준데이터셋</p><img src="./src/img/bg-main-open04.png" alt="표준데이터셋 이미지"><strong>8,847건</strong>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="category-data-3 category-data">
+      <div class="data-1">
+        <h1>바로가기</h1>
+        <div class="go-another data-3__container">
+          <div class="go-another__content go-another__content--1"><img src="./src/img/01.png" alt="공공데이터 전략위원회 바로가기 이미지"><p>공공데이터<br/>전략위원회</p></div>
+          <div class="go-another__content go-another__content--2"><img src="./src/img/02.png" alt="공공데이터제공 분쟁조정위원회 바로가기 이미지"><p>공공데이터제공<br/>분쟁조정위원회</p></div>
+          <div class="go-another__content go-another__content--3"><img src="./src/img/03.png" alt="공공데이터 활용 창업경진대회 바로가기 이미지"><p>공공데이터 활용<br/>창업경진대회</p></div>
+          <div class="go-another__content go-another__content--4"><img src="./src/img/04.png" alt="공공데이터 지원 오픈스퀘어 -D 바로가기 이미지"><p>공공데이터 지원<br/> 오픈스퀘어 -D</p></div>
+          <div class="go-another__content go-another__content--5"><img src="./src/img/05.png" alt="오픈데이터 포럼 바로가기 이미지"><p>오픈데이터 포럼s</p></div>
+        </div>
+      </div>
+
+      <div class="data-2">
+        <h1>공지사항</h1>
+        <h3>더보기 ></h3>
+        <div class="notice data-3__container">
+          <div class="notice__content">
+            <h1>[금융위원회] OPEN API 2종 변경 안내</h1>
+            <h2>2022-12-28</h2>
+          </div>
+          <div class="notice__content">
+            <h1>[국토교통부] 임대차 신고정보 공개 확대로 인한 전월세 API 서...</h1>
+            <h2>2022-12-28</h2>
+          </div>
+          <div class="notice__content">
+            <h1>국민연금 가입 사업장 내역 업데이트 일정안내</h1>
+            <h2>2022-12-22</h2>
+          </div>
+        </div>
+      </div>
+
+      <div class="data-3">
+        <h1>소식지</h1>
+        <div class="data__gallery--2">
+          <!-- Swiper -->
+          <div class="swiper--2 mySwiper--2">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"><img src="./src/img/[금융위원회] 개인사업자정보개방_소식지_베너(380x240).jpg" alt="개인사업자정보개방 소식지 베너">
+              </div>
+              <div class="swiper-slide"><img src="./src/img/221215_NIA_카드뉴스 10회차 썸네일.png" alt="공공데이터 활용사례 소식지 배너">
+              </div>
+              <div class="swiper-slide"><img src="./src/img/01_공공데이터 포털_1_280.png" alt="공공데이터 활용사례 휘슬 소식지 배너">
+              </div>
+              <div class="swiper-slide"><img src="./src/img/민간서비스와 유사한 공공앱 개발은 이제 그만-min.jpg" alt="민간서비스와 유사한 공공앱 개발은 이제 그만 소식지 배너">
+              </div>
+              <div class="swiper-slide"><img src="./src/img/뉴스레터-min.jpg" alt="공공데이터 최신뉴스를 빠르게 소식지 배너">
+              </div>
+              <div class="swiper-slide"><img src="./src/img/OSD 컨설팅_소식지_원본데이터-min.png" alt="오픈스퀘어-D 공공데이터 활용 컨설팅 소식지 배너">
+              </div>
+              <div class="swiper-slide"><img src="./src/img/공공데이터포털-진위확인서비스-배너_수정-min.png" alt="국세청 사업자등록정보 진위확인 및 상태조회 OPEN API 서비스 제공 소식지 배너">
+              </div>
+              <div class="swiper-slide"><img src="./src/img/공공데이터 개방 소개 (380_240)-min.jpg" alt="공공데이터 개방 소개 소식지 배너">
+              </div>
+              <div class="swiper-slide"><img src="./src/img/신종코로나바이러스감염증관련_배너02_gif_min.gif" alt="코로나 백신 예방접종 소식지 배너">
+              </div>
+              <div class="swiper-slide"><img src="./src/img/data_banner_5_gif_min.gif" alt="공공기간 중복 유사 서비스 신고 소식지 배너">
+              </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination">10</div>
+          </div>
+        </div>
+
       </div>
     </section>
   </div>
+
+<footer class="footer">
+  <div class=top-btn onclick="window.scrollTo(0,0);" style="display:inline;"><img src="./src/img/btn-go-top.png" alt="위로가기 이미지 버튼"></div>
+
+  <section class="footer__01">
+    <div class="communication">
+      <img src="./src/img/ico-tel.png" alt="전화 아이콘" style="width: 19px; height: 20px;"><h1>공공데이터 개방 문의</h1><h2>1566-0025</h2>
+      <img src="./src/img/ico-email.png" alt="이메일 아이콘" style="width: 23px; height: 18px;"><h3>운영자 메일 상담</h3>
+    </div>
+    <div class="another">
+      <img src="./src/img/ico-facebook.png" alt="페이스북 아이콘">
+      <img src="./src/img/ico-twitter.png" alt="트위터 아이콘">
+      <img src="./src/img/ico-blog.png" alt="블로그 아이콘">
+    </div>
+  </section>
+  <section class="footer__02">
+    <div class="intro">
+      <p href="">이용약관</p>
+      <p href="">개인정보처리방침</p>
+      <p href="">공공데이터포털 소개</p>
+      <p href="">분쟁조정신청</p>
+    </div>
+    <div class="person">
+      개인정보분야별책임자 : 허인호
+    </div>
+    <div class="go-site">
+      <select class="select-site-list" title="">
+        <option value="http://www.gov.kr/">정부24</option>
+        <option value="http://www.mois.go.kr/">행정안전부</option>
+        <option value="http://www.odsc.go.kr/">공공데이터전략위원회</option>
+        <option value="http://www.odmc.or.kr/">공공데이터제공분쟁조정위원회</option>
+        <option value="http://www.opensquared.org/">오픈스퀘어-D</option>
+        <option value="http://odf.or.kr/">오픈데이터포럼</option>
+        <option value="https://www.open.go.kr/">대한민국 정보공개</option>
+        <option value="https://blog.naver.com/nia_korea/">공공데이터포털 블로그</option>
+        <option value="http://www.riss.kr/index.do">공공데이터 학술정보</option>
+        <option value="https://kosis.kr">KOSIS국가통계포털</option>
+      </select>
+      <button type="button" title="새창 열림" class="btn-go-site-button">이동</button>
+    </div>
+  </section>
+  <section class="footer__03">
+    <img src="./src/img/logo-footer-01.png" alt="행정안전부 로고 이미지">
+    <div class="address">
+      <div>
+        <p>(30116) 세종특별자치시 한누리대로 411(어진동, 행정안전부 별관) &nbsp;&nbsp;&nbsp;&nbsp;대표번호 :1566-0025 &nbsp;&nbsp;&nbsp;문의시간 : 09:00~18:00 (월~금)</p>
+      </div>      
+      <div>
+        <p>ⓒ행정안전부. All rights reserved.</p>
+      </div>
+    </div>
+  </section>
+</footer>
+
+
+  <script src="js/jquery.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="http://code.jquery.com/jquery-latest.js"></script>
 </body>
 
 </html>
