@@ -14,7 +14,7 @@ a{
 
 .wrapper{
   width: 100%;
-  height: 1000px;
+  height: 2000px;
   background-image: url(../img/bg-main.png);
   background-repeat: no-repeat;
   background-size: initial;
@@ -361,7 +361,12 @@ margin: 170px auto 0px auto;
 
 
 /*category-data*/
-.category-data{
+.category-data h1{
+  font-weight: 700;
+}
+
+/*category-data-1*/
+.category-data-1{
   width: 100%;
   height: 300px;
   max-width: 1200px;
@@ -369,21 +374,21 @@ margin: 170px auto 0px auto;
   margin: 200px auto 0px auto;
 }
 
-.category-data .data-1{
+.category-data-1 .data-1{
   width: 380px;
   margin-right: 30px;
   display: flex;
   position: relative;
 }
 
-.category-data .data-2{
+.category-data-1 .data-2{
   width: 380px;
   margin-right: 30px;
   display: flex;
   position: relative;
 }
 
-.category-data .data-3{
+.category-data-1 .data-3{
   width: 380px;
   display: flex;
   position: relative;
@@ -392,20 +397,20 @@ margin: 170px auto 0px auto;
 
 }
 
-.category-data h1{
+.category-data-1 h1{
   padding: 0 0 20px 0;
   font-size: 20px;
   line-height: 20px;
   letter-spacing: -0.05em;
 }
 
-.category-data h2{
+.category-data-1 h2{
   margin: 4px 0px 0px 5px;
   color: #666;
   font-size: 14px;
 }
 
-.category-data h3{
+.category-data-1 h3{
   position: absolute;
   right: 0;
   top: -4px;
@@ -508,7 +513,7 @@ margin: 170px auto 0px auto;
 }
 
 
-/**/
+/*swiper*/
 
 .swiper {
   width: 380px;
@@ -578,8 +583,6 @@ margin: 170px auto 0px auto;
 
 
 /*category-data-2*/
-
-
 .category-data-2{
   width: 100%;
   height: 300px;
@@ -724,3 +727,160 @@ margin: 170px auto 0px auto;
 
 
 /*category-data-3*/
+.category-data-3{
+  width: 100%;
+  height: 300px;
+  max-width: 1200px;
+  display: flex;
+  margin: -50px auto 0 auto;
+}
+
+.category-data-3 .data-1{
+  width: 380px;
+  margin-right: 30px;
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.category-data-3 .data-2{
+  width: 380px;
+  margin-right: 30px;
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.category-data-3 .data-3{
+  width: 380px;
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+}
+
+.category-data-3 h1{
+  padding: 0 0 20px 0;
+  font-size: 20px;
+  line-height: 20px;
+  letter-spacing: -0.05em;
+}
+
+.category-data-3 h2{
+  margin: 4px 0px 0px 5px;
+  color: #666;
+  font-size: 14px;
+}
+
+.category-data-3 h3{
+  position: absolute;
+  right: 0;
+  top: -4px;
+  margin: 7px 0px 0px 10px;
+  color: #666;
+  font-size: 14px;
+}
+
+.data-3__container{
+  height: 240px;
+  width: 380px;
+  background-color: #fff;
+}
+
+.notice{
+  overflow: hidden;
+}
+
+.notice .notice__content{
+  border-left: 4px solid #a0c2e4;
+  padding-left: 16px !important;
+  height: 82px;
+  border-bottom: 0.5px solid #d2d0d0;
+}
+
+.notice .notice__content:last-child{
+  border-bottom: none;
+}
+
+.notice .notice__content h1{
+  color: #333;
+  line-height: 0;
+  font-size: 14px;
+  font-weight: 500;
+  padding-top: 30px;
+}
+
+.notice .notice__content h2{
+  color: #666;
+  font-size: 14px;
+  margin-top: -5px;
+  margin-left: -1px;
+}
+
+/*swiper--2*/
+.swiper--2 {
+  margin-top: 70px;
+  width: 380px;
+  height: 240px;
+  position: absolute;
+  top: -20px;
+  left: 0;
+  overflow: hidden;
+}
+
+/**/
+.go-another{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.go-another .go-another__content{
+  position: relative; 
+}
+
+.go-another .go-another__content p{
+  margin-top: 65px;
+  line-height: 1.5;
+  font-size: 12px;
+  text-align: center;
+  letter-spacing: -1px;
+  color: #333333 !important;
+}
+
+.go-another .go-another__content--1,
+.go-another .go-another__content--2{
+  width: 188px;
+  height: 120px;
+  border: 1px solid #eee;
+}
+
+
+.go-another .go-another__content--3,
+.go-another .go-another__content--4,
+.go-another .go-another__content--5{
+  width: 124px;
+  height: 120px;
+  border: 1px solid #eee;
+}
+
+.go-another .go-another__content--1 img,
+.go-another .go-another__content--2 img{
+  position: absolute;
+  top: 20px;
+  left: 75px;
+}
+
+.go-another .go-another__content--3 img,
+.go-another .go-another__content--4 img,
+.go-another .go-another__content--5 img{
+  position: absolute;
+  top: 20px;
+  left: 41px;
+}
+
+
+
+
