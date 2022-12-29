@@ -3,13 +3,17 @@
 body{
   font-family: 'Malgun Gothic', '맑은 고딕', Dotum, '돋움', sans-serif;
   background-color: #f7f7f7;
+  position: relative;
+  height: 1500px;
 }
 a{
   text-decoration: none;
   color: #fff;
   cursor: pointer;
 }
-
+li:hover{
+  color: #0051a4;
+}
 
 
 .wrapper{
@@ -733,6 +737,7 @@ margin: 170px auto 0px auto;
   max-width: 1200px;
   display: flex;
   margin: -50px auto 0 auto;
+  cursor: pointer;
 }
 
 .category-data-3 .data-1{
@@ -850,6 +855,32 @@ margin: 170px auto 0px auto;
   color: #333333 !important;
 }
 
+.go-another .go-another__content:hover{
+  background-color: #4185ca;
+  text-decoration: none !important;
+  cursor: pointer;
+}
+
+.go-another .go-another__content:hover p{
+  color: #fff !important;
+}
+
+.go-another .go-another__content--1:hover img{
+  background-image: url(../img/01_hover.png);
+}
+.go-another .go-another__content--2:hover img{
+  background-image: url(../img/02_hover.png);
+}
+.go-another .go-another__content--3:hover img{
+  background-image: url(../img/03_hover.png);
+}
+.go-another .go-another__content--4:hover img{
+  background-image: url(../img/04_hover.png);
+}
+.go-another .go-another__content--5:hover img{
+  background-image: url(../img/05_hover.png);
+}
+
 .go-another .go-another__content--1,
 .go-another .go-another__content--2{
   width: 188px;
@@ -881,19 +912,18 @@ margin: 170px auto 0px auto;
   left: 41px;
 }
 
-
 /*top btn*/
 .top-btn{
   position: absolute;
-  bottom: -630px;
-  right: 80px;
-
+  top: -100px;
+  right: 100px;
 }
 
 /*footer*/
 footer{
   width: 1400px;
   height: 251px;
+  position: relative;
   background-color: #fff;
   border-bottom: 2px solid #422222;}
 
