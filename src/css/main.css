@@ -294,14 +294,19 @@ margin: 170px auto 0px auto;
   display: flex;
 }
 
-.main-theme .theme .theme__name{
+.main-theme .theme .theme__name ul{
+  display: flex;
+}
+
+.main-theme .theme .theme__name ul li a{
   margin: 1px 12px 0px 18px;
   font-size: 16px;
 }
 
-.main-theme .theme .theme__name:hover{  
+.main-theme .theme .theme__name ul li.active a{  
   text-decoration: underline;
   color: #ffda2e;
+  font-size: 16px;
 }
 
 
@@ -425,9 +430,8 @@ margin: 170px auto 0px auto;
 }
 
 
-/**/
-
-.data__container{
+/*tab*/
+.data__container--1{
   position: relative;
   width:380px;
   margin:auto;
@@ -437,18 +441,18 @@ margin: 170px auto 0px auto;
   left: 0;
 }
 
-.data__name{
+.data__name--1{
   width: 100%;
   height: 38px;
 }
 
-.data__name ul{
+.data__name--1 ul{
   width: 100%;
   display:table;
   table-layout: fixed;
   padding:0
 }
-.data__name li{
+.data__name--1 li{
   display: table-cell;
   height: 100%;
   padding: 10px;
@@ -458,17 +462,17 @@ margin: 170px auto 0px auto;
   text-align: center;
 }
 
-.data__name li.active{
+.data__name--1 li.active{
   background: #fff;
   color: #4185ca !important;
   font-weight: 700;
   border-bottom: 2.5px solid #4185ca;
 }
-.data__name li.active a{
+.data__name--1 li.active a{
   color: #0051a4;
   font-weight: 500;
 }
-.data__name li a{
+.data__name--1 li a{
   font-size: 16px;
   color: #222;
   display: block;
@@ -478,21 +482,21 @@ margin: 170px auto 0px auto;
   cursor: pointer;
 }
 
-.data__container .data__content{
+.data__container--1 .data__content--1{
   width:360px;
   padding-top: 25px;
   padding-left: 20px;
   background-color: #fff;
-  overflow-y: hidden;
+  overflow:hidden;
 }
 
-.data__container .data__content ol li{
+.data__container--1 .data__content--1 ol li{
   padding: 0;
   line-height: 1.1;
   margin-bottom: 16px !important;
 }
 
-.data__container .data__content ol li a{
+.data__container--1 .data__content--1 ol li a{
   color: #333 !important;
   vertical-align: top;
   white-space: nowrap;
@@ -500,7 +504,7 @@ margin: 170px auto 0px auto;
   font-size: 14px;
 }
 
-.data__container .data__content h6{
+.data__container--1 .data__content--1 h6{
   content: counter(my-awesome-counter);
   font-weight: bold;
   display: inline-block;
@@ -512,7 +516,7 @@ margin: 170px auto 0px auto;
   margin-right: 8px;
 }
 
-.data__container .data__content span{
+.data__container--1 .data__content--1 span{
   line-height: 23px;
 }
 
