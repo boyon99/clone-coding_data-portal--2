@@ -2,6 +2,7 @@
 
 body{
   font-family: 'Malgun Gothic', '맑은 고딕', Dotum, '돋움', sans-serif;
+  background-color: #222;
 }
 a{
   text-decoration: none;
@@ -399,14 +400,15 @@ margin: 170px auto 0px auto;
 }
 
 .category-data h2{
-  margin: 7px 0px 0px 10px;
+  margin: 4px 0px 0px 5px;
   color: #666;
   font-size: 14px;
 }
 
 .category-data h3{
   position: absolute;
-  right: 0;
+  right: -10px;
+  top: -4px;
   margin: 7px 0px 0px 10px;
   color: #666;
   font-size: 14px;
@@ -414,6 +416,102 @@ margin: 170px auto 0px auto;
 }
 
 
+/**/
+
+.data__container{
+  position: relative;
+  width:380px;
+  margin:auto;
+  position: absolute;
+  height: 260px;
+  top: 40px;
+  left: 0;
+}
+
+.data__name{
+  width: 100%;
+  height: 38px;
+}
+
+.data__name ul{
+  width: 100%;
+  display:table;
+  table-layout: fixed;
+  padding:0
+}
+.data__name li{
+  display: table-cell;
+  height: 100%;
+  padding: 10px;
+  background-color: #fff;
+  border-bottom: 2px solid #757575;  
+  color: #757575 !important;
+  text-align: center;
+}
+
+.data__name li.active{
+  background: #fff;
+  color: #4185ca !important;
+  font-weight: 700;
+  border-bottom: 2.5px solid #4185ca;
+}
+.data__name li.active a{
+  color: #0051a4;
+  font-weight: 500;
+}
+.data__name li a{
+  font-size: 16px;
+  color: #222;
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.data__container .data__content{
+  width:360px;
+  padding-top: 25px;
+  padding-left: 20px;
+  background-color: #fff;
+  overflow-y: hidden;
+}
+
+.data__container .data__content ol li{
+  padding: 0;
+  line-height: 1.1;
+  margin-bottom: 16px !important;
+}
+
+.data__container .data__content ol li a{
+  color: #333 !important;
+  vertical-align: top;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-size: 14px;
+}
+
+.data__container .data__content h6{
+  content: counter(my-awesome-counter);
+  font-weight: bold;
+  display: inline-block;
+  padding: 4px 8px;
+  background: #4185ca;
+  border-radius: 2px;
+  color: #fff;
+  font-size: 14px;
+  margin-right: 8px;
+}
+
 
 /**/
 
+
+.category-data-2{
+  width: 100%;
+  height: 300px;
+  max-width: 1200px;
+  background-color: #ffda2e;
+  display: flex;
+  margin: 50px auto 0px auto;
+}
