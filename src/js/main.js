@@ -29,3 +29,25 @@ $(".data__name li a").click(function () {
 
 
 /* recommand data - swiper */
+var swiper = new Swiper(".mySwiper", {
+  pagination: {
+    el: ".swiper-pagination",
+    type: "fraction"
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev"
+  },
+  autoplay: {
+    delay : 3000
+  },
+  loop: true
+});
+
+/* date */
+
+date = new Date();
+year = date.getFullYear();
+month = date.getMonth() + 1;
+day = date.getDate();
+document.getElementById("current_date").innerHTML = year + "-" + month + "-" + day;
